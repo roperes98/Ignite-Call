@@ -56,11 +56,11 @@ Those technologies were used to create a robust and efficient application:
 
 ## 🗂️ Downloading the repository
 
-### Prerequisites
+### Prerequisites:
 - Node.js and npm (comes with Node.js).
 - A Google account with access to the Google Calendar API.
 
-### Instalation
+### Instalation:
 
 ```bash
 
