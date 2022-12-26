@@ -29,8 +29,8 @@ Welcome to Ignite Call, a scheduling application that allow users to create, vie
 ⠀⠀⠀⠀⠀⠀⠀⠀
 ## ⚒️ Features
 
-- Login: create an account and log in with Next Auth. (future update)
-- Google calendar: connect your calendar to the app to see your events in one place. (In development)
+- Login: create an account and log in with Next Auth.
+- Google calendar: connect your calendar to the app to see your events in one place.
 - Edit appointments: create, view, update and delete appointments with the app. (future update)
 - Appointments are stored in a database using Prisma. (future update)
 - Efficient Form Handling: The app uses Zod for input validation, React Hook Form for form handling and Stitches for styling.
