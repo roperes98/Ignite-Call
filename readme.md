@@ -32,10 +32,10 @@ Welcome to Ignite Call, a scheduling application that allow users to create, vie
 - Login: create an account and log in with Next Auth.
 - Google calendar: connect your calendar to the app to see your events in one place.
 - Set availability: restrict your appointments to specific days and times.
-- Edit appointments: create, view, update and delete appointments with the app. (future update)
-- Appointments are stored in a database using Prisma. (future update)
+- Edit appointments: create, view, update and delete appointments with the app.
+- Appointments are stored in a database using Prisma.
 - Efficient Form Handling: The app uses Zod for input validation, React Hook Form for form handling and Stitches for styling.
-- Date and Time Manipulation: using DayJS. (future update)
+- Date and Time Manipulation: using DayJS.
 
 ⠀⠀⠀⠀⠀⠀⠀⠀
 ## 🚀 Technologies
@@ -52,6 +52,8 @@ Those technologies were used to create a robust and efficient application:
 - [React Hook Form](https://react-hook-form.com/) - A library for building forms with React Hooks.
 - [Stitches](https://stitches.dev/) - A CSS-in-JS library for building scalable and maintainable styles.
 - [DayJS](https://day.js.org/) - A lightweight alternative to Moment.js for manipulating dates and times.
+- [Next SEO](https://github.com/garmeeh/next-seo) - A plugin that makes managing SEO easier in Next.js projects.
+- [Satori](https://github.com/vercel/satori) - Vercel's Open Graph Image Generation for implementing the SEO.
 
 ⠀⠀⠀⠀⠀⠀⠀⠀
 
