@@ -9,14 +9,33 @@ interface ScheduleProps {
   user: {
     name: string
     bio: string
+    username: string
     avatarUrl: string
   }
 }
 
 export default function Schedule({ user }: ScheduleProps) {
+  const originalAvatarUrl = user.avatarUrl.split('/')
+  const avatarUrlWithSufix = originalAvatarUrl[originalAvatarUrl.length - 1]
+  const stringParts = avatarUrlWithSufix.split('=')
+  const imgString = stringParts[0]
+
   return (
     <>
-      <NextSeo title={`Agendar com ${user.name} | Ignite Call`} />
+      <NextSeo
+        title={`Agendar com ${user.name} | Ignite Call`}
+        openGraph={{
+          title: `Agendar com ${user.name} | Ignite Call`,
+          description: `Faça agendamentos de maneira descomplicada usando o Ignite Call`,
+          images: [
+            {
+              url: `http://localhost:3000/api/og?username=${user.username}&imgString=${imgString}`,
+              width: 1200,
+              height: 600,
+            },
+          ],
+        }}
+      />
 
       <Container>
         <UserHeader>
@@ -57,6 +76,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       user: {
         name: user.name,
+        username: user.username,
         bio: user.bio,
         avatarUrl: user.avatar_url,
       },
